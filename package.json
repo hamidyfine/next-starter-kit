@@ -1,0 +1,50 @@
+{
+  "name": "next-starter-kit",
+  "version": "0.0.1",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "first-run": "mkdir public/messages && mkdir types && yarn translation && yarn build",
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint --fix",
+    "translation": "npx ts-node --esm ./scripts/translation.ts && npx eslint --ext .ts config/locale.ts --fix --quiet"
+  },
+  "dependencies": {
+    "@tanstack/react-query": "^4.29.25",
+    "@tanstack/react-query-devtools": "^4.29.25",
+    "axios": "^1.4.0",
+    "i18next": "^23.2.11",
+    "next": "13.4.10",
+    "next-i18next": "^14.0.0",
+    "next-intl": "^2.19.0",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-i18next": "^13.0.2",
+    "sass": "^1.63.6"
+  },
+  "devDependencies": {
+    "@types/node": "20.4.2",
+    "@types/react": "18.2.15",
+    "@types/react-dom": "18.2.7",
+    "autoprefixer": "10.4.14",
+    "dotenv": "^16.3.1",
+    "eslint": "^8.45.0",
+    "eslint-config-next": "13.4.10",
+    "eslint-config-react-app": "^7.0.1",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-json": "^3.1.0",
+    "eslint-plugin-jsx-a11y": "^6.7.1",
+    "eslint-plugin-react": "^7.32.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "json-ts": "^1.6.4",
+    "postcss": "8.4.26",
+    "stylelint": "^15.10.1",
+    "stylelint-config-hudochenkov": "^9.0.0",
+    "stylelint-order": "^6.0.3",
+    "stylelint-scss": "^5.0.1",
+    "tailwindcss": "3.3.3",
+    "typescript": "5.1.6"
+  }
+}
