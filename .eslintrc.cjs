@@ -8,10 +8,8 @@ module.exports = {
         parser: '@typescript-eslint/parser',
     },
     extends: [
-        'react-app',
         'react-app/jest',
         'next/core-web-vitals',
-        'plugin:react-hooks/recommended',
         'plugin:json/recommended',
     ],
     rules: {
